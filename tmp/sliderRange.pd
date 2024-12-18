@@ -1,0 +1,25 @@
+#N canvas 1099 568 450 300 10;
+#X floatatom 128 46 10 0 0 0 - - -;
+#X obj 128 19 r \$0-sample-length;
+#X obj 128 124 / 44100;
+#X obj 155 99 samplerate~;
+#X obj 128 71 t f b;
+#X floatatom 128 147 10 0 0 0 - - -;
+#X text 193 150 In seconds;
+#X text 193 49 In samples;
+#X obj 159 184 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -191407
+-13381 -1 0 1;
+#X floatatom 30 47 10 0 0 0 - - -;
+#X obj 30 19 r location-set;
+#X floatatom 30 147 10 0 0 0 - - -;
+#X obj 30 121 /;
+#X connect 0 0 4 0;
+#X connect 0 0 12 1;
+#X connect 1 0 0 0;
+#X connect 2 0 5 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 0;
+#X connect 4 1 3 0;
+#X connect 9 0 12 0;
+#X connect 10 0 9 0;
+#X connect 12 0 11 0;
